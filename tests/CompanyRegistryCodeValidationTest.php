@@ -69,6 +69,29 @@ final class CompanyRegistryCodeValidationTest extends TestCase
         $this->assertInvalidRegistryCode('47101010033'); // valid personal id
     }
 
+    /**
+     * @test
+     */
+    public function fakeTrue()
+    {
+        $sut = CompanyRegistryCodeValidation::fakeTrue();
+        $this->assertTrue(
+            $sut->valid()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function fakeFalse()
+    {
+        $sut = CompanyRegistryCodeValidation::fakeFalse();
+        $this->assertFalse(
+            $sut->valid()
+        );
+    }
+
+
     private function assertValidRegistryCode($code): void
     {
         $sut = CompanyRegistryCodeValidation::create($code);

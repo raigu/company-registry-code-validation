@@ -58,6 +58,16 @@ final class CompanyRegistryCodeValidation
         return self::create('00000000');
     }
 
+    public static function fakeTrue(): self
+    {
+        return self::create('00000000');
+    }
+
+    public static function fakeFalse(): self
+    {
+        return self::create('');
+    }
+
     public static function fromClosure(Closure $closure): self
     {
         return new self($closure);
