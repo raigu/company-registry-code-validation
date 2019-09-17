@@ -23,7 +23,7 @@ if ($validation->valid()) {
 }
 ```
 
-If used in declarative style programming and the registry code is not known and the
+If used in declarative programming and the registry code is not known at the
 construction phase then use closure to defer code fetching:
 
 ```php
