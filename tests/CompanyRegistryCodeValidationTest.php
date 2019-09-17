@@ -63,10 +63,15 @@ final class CompanyRegistryCodeValidationTest extends TestCase
     public function valid_regression()
     {
         $this->assertValidRegistryCode('12213008');
-        $this->assertValidRegistryCode('00000000'); // stub value
+        $this->assertValidRegistryCode('10000062'); // First calculated check number is 10
+        $this->assertValidRegistryCode('10000640'); // Second calculated check number is still 10
 
         $this->assertInvalidRegistryCode('');
+        $this->assertInvalidRegistryCode('ABCDEFGH');
+        $this->assertInvalidRegistryCode('12213007'); // invalid control number
         $this->assertInvalidRegistryCode('47101010033'); // valid personal id
+
+        $this->assertValidRegistryCode('00000000'); // value used in stub
     }
 
     /**
