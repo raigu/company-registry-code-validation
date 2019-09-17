@@ -24,5 +24,8 @@
         "psr-4": {
             "Raigu\\CompanyRegistryCodeValidation\\": "tests/"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
 }
