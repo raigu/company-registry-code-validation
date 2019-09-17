@@ -26,6 +26,7 @@
         }
     },
     "scripts": {
+        "coverage": "vendor/bin/phpunit --coverage-text",
         "test": "vendor/bin/phpunit"
     }
 }
