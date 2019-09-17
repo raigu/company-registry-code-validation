@@ -58,7 +58,3 @@ $ composer test
 ## License
 
 Licensed under [MIT](LICENSE)
-
-## Credit
-
-I copy-pasted control number algorithm from [renekross/personal-id-code-php](https://github.com/renekorss/personal-id-code-php) made by Rene Kross

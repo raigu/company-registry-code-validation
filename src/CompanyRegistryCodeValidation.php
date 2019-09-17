@@ -32,19 +32,26 @@ final class CompanyRegistryCodeValidation
 
     private function controlNumber(string $code): int
     {
-        $total = 0;
+        // @source https://et.wikipedia.org/wiki/Isikukood#Kontrollnumber
+        $sum = 0;
         for ($i = 0; $i < 7; $i++) {
-            $multiplier = $i + 1;
-            $total += substr($code, $i, 1) * ($multiplier > 9 ? 1 : $multiplier);
+            $d = intval(substr($code, $i, 1));
+            $w = $i+1;
+            $sum += $d*$w;
         }
-        $modulo = $total % 11;
-        // Second round
+
+        $modulo = $sum % 11;
+
         if ($modulo === 10) {
+            $sum = 0;
             for ($i = 0; $i < 7; $i++) {
-                $multiplier = $i + 3;
-                $total += substr($code, $i, 1) * ($multiplier > 9 ? $multiplier - 9 : $multiplier);
+                $d = intval(substr($code, $i, 1));
+                $w = $i+3;
+                $sum += $d*$w;
             }
-            $modulo = $total % 8;
+
+            $modulo = $sum % 11;
+
             if ($modulo === 10) {
                 $modulo = 0;
             }
