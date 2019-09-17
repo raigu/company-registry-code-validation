@@ -1,0 +1,13 @@
+{
+    "name": "raigur/company-registry-code-validation",
+    "description": "Estonian company registry code validation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rait Kapp",
+            "email": "3442567+raigu@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
