@@ -49,6 +49,12 @@ $validation = CompanyRegistryCodeValidation::fakeFalse(); // never valid
 assert($validation->valid());
 ```
 
+## Testing
+
+```bash
+$ composer test
+```
+
 ## License
 
 Licensed under [MIT](LICENSE)
