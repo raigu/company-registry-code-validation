@@ -1,6 +1,6 @@
 <?php
 
-namespace Raigu\CompanyRegistryCodeValidation;
+namespace Raigu;
 
 use Closure;
 

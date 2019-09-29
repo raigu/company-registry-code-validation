@@ -11,7 +11,7 @@ composer require raigu/company-registry-code-validation
 ## Usage 
 
 ```php
-use Raigu\CompanyRegistryCodeValidation\CompanyRegistryCodeValidation;
+use Raigu\CompanyRegistryCodeValidation;
 
 $validation = CompanyRegistryCodeValidation::create('12213008');
 

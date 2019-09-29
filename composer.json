@@ -17,12 +17,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Raigu\\CompanyRegistryCodeValidation\\": "src/"
+            "Raigu\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Raigu\\CompanyRegistryCodeValidation\\": "tests/"
+            "Raigu\\": "tests/"
         }
     },
     "scripts": {
