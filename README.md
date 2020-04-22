@@ -2,13 +2,13 @@
 
 Validation of Estonian company registry code
 
-## Install 
+# Install 
 
 ````bash
 composer require raigu/company-registry-code-validation
 ````
 
-## Usage 
+# Usage 
 
 ```php
 use Raigu\CompanyRegistryCodeValidation;
@@ -23,38 +23,18 @@ if ($validation->valid()) {
 }
 ```
 
-If used in declarative programming and the registry code is not known at the
-construction phase then use closure to defer code fetching:
-
-```php
-$validation = CompanyRegistryCodeValidation::fromClosure(function () {
-    $code = '';
-    
-    // here implement code fetching
-
-    return $code;
-});
-```
-
-There are some factory methods for creating Test Doubles for subject under test.
-
-```php
-$validation = CompanyRegistryCodeValidation::stub(); // not known and cared if it is valid or not
-assert(is_bool($validation->valid()));
-
-$validation = CompanyRegistryCodeValidation::fakeTrue(); // always valid
-assert($validation->valid());
-
-$validation = CompanyRegistryCodeValidation::fakeFalse(); // never valid
-assert($validation->valid());
-```
-
-## Testing
+# Testing
 
 ```bash
 $ composer test
 ```
 
-## License
+# Code Coverage
+
+```bash
+$ composer coverage
+```
+
+# License
 
 Licensed under [MIT](LICENSE)
