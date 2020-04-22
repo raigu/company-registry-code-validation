@@ -11,15 +11,13 @@ composer require raigu/company-registry-code-validation
 # Usage 
 
 ```php
-use Raigu\CompanyRegistryCodeValidation;
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
 
-$validation = CompanyRegistryCodeValidation::create('12213008');
-
-// Check validity
-if ($validation->valid()) {
+if (\Raigu\is_company_registry_code_valid('12213008')) {
     echo 'Valid company registry code';
 } else {
-    echo 'Invalid company registry code';  
+    echo 'Invalid company registry code';
 }
 ```
 
