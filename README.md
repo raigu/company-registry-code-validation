@@ -1,3 +1,10 @@
+[![Latest Stable Version](https://poser.pugx.org/raigu/company-registry-code-validation/v/stable)](https://packagist.org/packages/raigu/company-registry-code-validation)
+[![GitHub license](https://img.shields.io/github/license/raigu/company-registry-code-validation)](LICENSE.md)
+[![Total Downloads](https://poser.pugx.org/raigu/company-registry-code-validation/downloads)](https://packagist.org/packages/raigu/company-registry-code-validation)
+[![build](https://github.com/raigu/company-registry-code-validation/workflows/build/badge.svg)](https://github.com/raigu/company-registry-code-validation/actions?query=workflow%3Abuild)
+[![codecov](https://codecov.io/gh/raigu/company-registry-code-validation/branch/master/graph/badge.svg)](https://codecov.io/gh/raigu/company-registry-code-validation)
+
+
 # Company Registry Code Validation
 
 Validation of Estonian company registry code
