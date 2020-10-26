@@ -2,8 +2,8 @@
 
 namespace Raigu;
 
-if (!function_exists('is_company_registry_code_valid')) {
-    function is_company_registry_code_valid(string $code): bool
+if (!function_exists('is_valid_company_registry_code')) {
+    function is_valid_company_registry_code(string $code): bool
     {
         if (strlen($code) !== 8) {
             return false;

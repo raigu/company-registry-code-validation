@@ -16,7 +16,7 @@ final class CompanyRegistryCodeValidation
     {
         $code = call_user_func($this->closure);
 
-        return is_company_registry_code_valid($code);
+        return is_valid_company_registry_code($code);
     }
 
     public static function stub(): self

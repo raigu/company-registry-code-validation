@@ -21,7 +21,7 @@ composer require raigu/company-registry-code-validation
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 
-if (\Raigu\is_company_registry_code_valid('12213008')) {
+if (\Raigu\is_valid_company_registry_code('12213008')) {
     echo 'Valid company registry code';
 } else {
     echo 'Invalid company registry code';
