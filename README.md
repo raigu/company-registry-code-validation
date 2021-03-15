@@ -33,12 +33,6 @@ if (\Raigu\is_valid_company_registry_code('12213008')) {
 $ composer test
 ```
 
-# Code Coverage
-
-```bash
-$ composer coverage
-```
-
 # License
 
 Licensed under [MIT](LICENSE.md)
