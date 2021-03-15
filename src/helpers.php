@@ -13,7 +13,7 @@ if (!function_exists('is_valid_company_registry_code')) {
             return false;
         }
 
-        if (company_registry_code_control_number($code) !== intval($code[-1])) {
+        if (company_registry_code_control_number($code) !== intval(substr($code, -1))) {
             return false;
         }
 

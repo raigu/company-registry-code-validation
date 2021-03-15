@@ -4,7 +4,9 @@ namespace Raigu;
 
 use Closure;
 
-
+/**
+ * @deprecated will be removed in version v3.0
+ */
 final class CompanyRegistryCodeValidation
 {
     /**
