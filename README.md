@@ -12,6 +12,14 @@ Validation of Estonian company registry code
 
 PHP 7.0, 7.1, 7.2, 7.3, 7.4
 
+# Maintainability
+
+This packages aims to have long life. It has zero dependencies. 
+
+Tests are written manually. Firstly, it is so simple. Secondly, testing tools do not support range of PHP versions supported by this package.
+
+[Automated test](https://github.com/raigu/company-registry-code-validation/actions) covers all PHP versions supported.
+
 # Install 
 
 ````bash
