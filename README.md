@@ -8,6 +8,10 @@
 
 Validation of Estonian company registry code
 
+# Compatibility
+
+PHP 7.0, 7.1, 7.2, 7.3, 7.4
+
 # Install 
 
 ````bash
