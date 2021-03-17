@@ -10,7 +10,7 @@ Validation of Estonian company registry code
 
 # Compatibility
 
-PHP 7.0, 7.1, 7.2, 7.3, 7.4
+PHP 7.0, 7.1, 7.2, 7.3, 7.4, 8.0
 
 # Maintainability
 
