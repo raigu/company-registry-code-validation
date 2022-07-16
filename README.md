@@ -16,9 +16,9 @@ PHP 7.0, 7.1, 7.2, 7.3, 7.4, 8.0, 8.1
 
 This packages aims to have long life. It has zero dependencies. 
 
-Tests are written manually. Firstly, it is so simple. Secondly, testing tools do not support range of PHP versions supported by this package.
+Tests are written manually because testing tools do not support the range of the PHP versions supported by this package.
 
-[Automated test](https://github.com/raigu/company-registry-code-validation/actions) covers all PHP versions supported.
+[Automated test](https://github.com/raigu/company-registry-code-validation/actions) covers all the supported PHP versions.
 
 # Install 
 
