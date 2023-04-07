@@ -21,7 +21,7 @@ function assertInvalidRegistryCode($code)
     echo "OK.\n";
 }
 
-echo "Regression tests";
+echo "Regression tests:\n";
 assertValidRegistryCode('12213008');
 assertValidRegistryCode('10000062'); // First calculated check number is 10
 assertValidRegistryCode('10000640'); // Second calculated check number is still 10
